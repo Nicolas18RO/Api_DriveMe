@@ -75,8 +75,13 @@ WSGI_APPLICATION = 'DriveMe_SI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "DriveMe_SI",
+        'USER': 'postgres', 
+        'PASSWORD':'1002525933',
+        'HOST': 'localhost',
+        'PORT': '5432',
+
     }
 }
 
