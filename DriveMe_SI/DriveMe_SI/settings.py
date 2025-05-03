@@ -36,7 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',   
+    'rest_framework',
+    'corsheaders',
+    'DriveMe',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -48,7 +52,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+CORS_ALLOWED_ORIGINS =[
+    'http://localhost:3000',
+]
+CORS_ALLOWED_ALL_ORIGINS = True
 ROOT_URLCONF = 'DriveMe_SI.urls'
 
 TEMPLATES = [
